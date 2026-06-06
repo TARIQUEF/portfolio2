@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project — My Project Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;600;800;900&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="stars.css" />
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+  <div class="stars-container">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
+
+  <main class="project-detail-page" id="project-root">
+    <nav class="project-detail-nav">
+      <a href="index.html" class="project-back-link">
+        <span class="project-back-arrow" aria-hidden="true">←</span>
+        Back to gallery
+      </a>
+    </nav>
+
+    <article class="project-detail-card" id="project-content" hidden>
+      <header class="project-detail-header">
+        <div class="project-detail-title-row">
+          <h1 class="project-detail-title" id="project-title"></h1>
+          <img
+            src="assets/winner.png"
+            alt="Hackathon winner"
+            class="project-detail-crown"
+            id="project-winner-badge"
+            width="64"
+            height="64"
+            hidden
+          />
+        </div>
+        <p class="project-detail-tagline" id="project-tagline"></p>
+      </header>
+
+      <section class="project-detail-video" id="project-media-section" aria-label="Project demo media">
+        <div id="project-media-root">
+          <div class="project-video-frame" id="project-video-container">
+            <div class="project-video-placeholder" id="project-video-placeholder">
+              <span class="project-video-placeholder-icon" aria-hidden="true">▶</span>
+              <p>Demo video coming soon</p>
+              <span class="project-video-placeholder-hint">Add your YouTube ID in <code>js/projects-data.js</code></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="project-detail-body">
+        <section class="project-detail-section">
+          <h2 class="project-detail-section-title">About</h2>
+          <div class="project-detail-overview" id="project-overview"></div>
+        </section>
+
+        <section class="project-detail-section">
+          <h2 class="project-detail-section-title">Technical highlights</h2>
+          <ul class="project-detail-list" id="project-highlights"></ul>
+        </section>
+
+        <section class="project-detail-section">
+          <h2 class="project-detail-section-title">Built with</h2>
+          <div class="project-detail-stack" id="project-stack"></div>
+        </section>
+
+        <section class="project-detail-actions" id="project-actions" aria-label="Project links"></section>
+      </div>
+    </article>
+
+    <div class="project-detail-error" id="project-error" hidden>
+      <h1>Project not found</h1>
+      <p>That project doesn&apos;t exist or the link may be outdated.</p>
+      <a href="index.html" class="project-cta project-cta--primary">Return to gallery</a>
+    </div>
+  </main>
+
+  <aside
+    class="project-video-mini"
+    id="project-video-mini"
+    hidden
+    aria-label="Floating demo video"
+  >
+    <div class="project-video-mini-bar">
+      <span class="project-video-mini-label" id="project-video-mini-label">Demo</span>
+      <button type="button" class="project-video-mini-back" id="project-video-mini-back">
+        Back to video
+      </button>
+    </div>
+    <div class="project-video-mini-frame" id="project-video-mini-frame"></div>
+  </aside>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/project-page.js"></script>
+</body>
+</html>
