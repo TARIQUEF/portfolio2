@@ -293,13 +293,20 @@ body {
   z-index: 1;
   transition: transform 180ms ease;
   width: 100%;
-  text-decoration: none;
-  color: inherit;
   cursor: pointer;
   box-shadow: inset 0px 0px 0.3em 0px var(--glow-color),
     0px 0px 0.6em 0px var(--glow-color),
     0px 0px 1.5em 0.3em rgba(10, 10, 10, 0.15);
   animation: border-flicker 3s linear infinite;
+}
+
+a.project-card,
+a.project-card:visited,
+a.project-card:hover,
+a.project-card:active,
+a.project-card:focus-visible {
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-card {
