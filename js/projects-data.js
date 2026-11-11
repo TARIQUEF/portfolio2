@@ -7,20 +7,20 @@ window.PROJECTS = {
   revoice: {
     title: "ReVoice",
     winner: true,
-    tagline: "Hack Knight Fall 2025 First Place — Real-time fluency without losing your voice for speech impediments.",
+    tagline: "Hack Knight Fall 2025 First Place. Real-time fluency without losing your voice for speech impediments.",
     youtubeId: "vFhXHzt4w1U",
     overview: [
-      "ReVoice is an AI-powered real-time speech assistant designed to help people wwith stutter speech impediment communicate fluently—without losing their natural voice. For those with such speech impediments, people judge not based on what they say, but how it comes out. We believe in empowering individuals who want to bring focus to their message and create content without losing their identity or confidence. As the user speaks, ReVoice listens, detects specific stutter patterns or speech blocks, and instantly regenerates the same words in the speaker's own cloned voice, preserving tone, rhythm, and emotion.",
-      "For video inputs, regenerated audio is lip-synced to the user's face so it looks and sounds as if they spoke it themselves. Users can choose Fluency Mode for instant corrected output, or Practice Mode where an ElevenLabs-powered assistant pronounces difficult words alongside them in their cloned voice to build confidence while promoting tips to improve fluency.",
+      "ReVoice is an AI-powered real-time speech assistant designed to help people wwith stutter speech impediment communicate fluently without losing their natural voice. For those with such speech impediments, people judge not based on what they say, but how it comes out. We believe in empowering individuals who want to bring focus to their message and create content without losing their identity or confidence. As the user speaks, ReVoice listens, detects specific stutter patterns or speech blocks and instantly regenerates the same words in the speaker's own cloned voice, preserving tone, rhythm and emotion.",
+      "For video inputs, regenerated audio is lip-synced to the user's face so it looks and sounds as if they spoke it themselves. Users can choose Fluency Mode for instant corrected output or Practice Mode where an ElevenLabs-powered assistant pronounces difficult words alongside them in their cloned voice to build confidence while promoting tips to improve fluency.",
       "Built as a demonstration prototype. We dont believe that impediments should be hidden, we believe in empowering individuals who want to bring focus to their message and create content without losing their identity or confidence.",
     ],
     highlights: [
       "Co-developed a full-stack AI speech correction platform enabling users with speech impediments to produce fluently corrected, lip-synchronized video content with preserved voice identity",
-      "Built an end-to-end pipeline integrating Whisper ASR, librosa disfluency detection, Google Gemini for transcript refinement, and ElevenLabs for voice-preserving synthesis",
-      "Engineered Fluency Mode for instant sentence regeneration in the user's cloned voice, and Practice Mode with a real-time AI assistant that speaks difficult words alongside the user",
+      "Built an end-to-end pipeline integrating Whisper ASR, librosa disfluency detection, Google Gemini for transcript refinement and ElevenLabs for voice-preserving synthesis",
+      "Engineered Fluency Mode for instant sentence regeneration in the user's cloned voice and Practice Mode with a real-time AI assistant that speaks difficult words alongside the user",
       "Integrated Wav2Lip (ONNX) with FFmpeg to generate natural lip-synchronized video from corrected audio, running the model locally due to outdated open-source API documentation",
-      "Orchestrated a Python Flask backend connecting Whisper, Gemini, ElevenLabs, and Wav2Lip with a React frontend for record/upload, playback, and download workflows",
-      "Designed disfluency detection logic for blocks, repetitions, and prolongations—not one-size-fits-all correction—while optimizing streaming and caching for near real-time feedback",
+      "Orchestrated a Python Flask backend connecting Whisper, Gemini, ElevenLabs and Wav2Lip with a React frontend for record/upload, playback and download workflows",
+      "Designed disfluency detection logic for blocks, repetitions and prolongations (not one-size-fits-all correction) while optimizing streaming and caching for near real-time feedback",
     ],
     stack: [
       "Python",
@@ -62,20 +62,20 @@ window.PROJECTS = {
   glancescribe: {
     title: "GlanceScribe",
     winner: true,
-    tagline: "Hack Brooklyn Spring 2026 Winner — Hands-free clinical documentation during active patient care using smart glasses and AI.",
+    tagline: "Hack Brooklyn Spring 2026 Winner. Hands-free clinical documentation during active patient care using smart glasses and AI.",
     youtubeId: "C1dSdK3tr18",
     youtubeStart: 206,
     overview: [
-      "GlanceScribe is a hands-free clinical documentation assistant designed for high-pressure medical environments. Clinicians can document encounters in real time while actively providing care—without pausing, removing gloves, or switching to manual charting.",
-      "By capturing both what the clinician says and what they are looking at, a real-time multimodal AI pipeline transforms natural bedside behavior into structured medical documentation. Speech streams through ElevenLabs Scribe v2 for low-latency transcription. POV video from Meta smart glasses—relayed via a custom Swift mobile app—is paired with TensorFlow.js MoveNet to log which anatomy is being examined.",
+      "GlanceScribe is a hands-free clinical documentation assistant designed for high-pressure medical environments. Clinicians can document encounters in real time while actively providing care without pausing, removing gloves or switching to manual charting.",
+      "By capturing both what the clinician says and what they are looking at, a real-time multimodal AI pipeline transforms natural bedside behavior into structured medical documentation. Speech streams through ElevenLabs Scribe v2 for low-latency transcription. POV video from Meta smart glasses (relayed via a custom Swift mobile app) is paired with TensorFlow.js MoveNet to log which anatomy is being examined.",
       "Google Gemini turns session data into validated JSON patient charts and SOAP notes. FFmpeg assembles highlight reels from the most relevant focus intervals. Everything surfaces on a live dashboard with an interactive Three.js body map and a Tavily-powered chat assistant for quick research-based clinical lookup.",
       "Built as a demonstration prototype.",
     ],
     highlights: [
       "Co-developed a hands-free charting platform streaming live POV video and audio from Meta smart glasses, automating SOAP note and patient chart generation via Gemini into structured JSON validated against strict schemas",
-      "Engineered real-time doctor–patient transcription using ElevenLabs Scribe v2 over WebSockets (~150ms latency), with transcripts broadcast to a clinician dashboard through Server-Sent Events (SSE)",
+      "Engineered real-time doctor-patient transcription using ElevenLabs Scribe v2 over WebSockets (~150ms latency), with transcripts broadcast to a clinician dashboard through Server-Sent Events (SSE)",
       "Built a custom Swift + Xcode mobile app to relay Meta glasses video over local IP when direct streaming APIs were restricted, proxied through Node.js + Express for browser playback without CORS issues",
-      "Implemented TensorFlow.js MoveNet pose estimation with tuned heuristics to detect examined anatomical regions, log time-based focus events, and auto-generate highlight reels with FFmpeg",
+      "Implemented TensorFlow.js MoveNet pose estimation with tuned heuristics to detect examined anatomical regions, log time-based focus events and auto-generate highlight reels with FFmpeg",
       "Visualized examined body regions on an interactive Three.js 3D model (GLB) aligned with speech and visual context from the encounter",
       "Orchestrated end-to-end session lifecycle on Node.js + Express: capture → stream → process → structure → display, triggering Gemini passes when sessions end",
       "Integrated a floating Tavily-powered chat assistant for real-time, web-augmented clinical lookup (e.g. dosing, differential causes) directly within the dashboard workspace",
@@ -120,19 +120,19 @@ window.PROJECTS = {
   flavorlab: {
     title: "The Flavor Lab",
     winner: false,
-    tagline: "CUNY Tech Prep Demo Night — Top 5 Outstanding · Explore flavor chemistry in 2D and 3D.",
+    tagline: "CUNY Tech Prep Demo Night Top 5 Outstanding. Explore flavor chemistry in 2D and 3D.",
     youtubeId: "9gN5FZp0l_o",
     overview: [
-      "The Flavor Lab is an interactive application that unlocks the hidden chemistry behind taste. Built on the FlavorGraph network, it maps shared aromatic compounds between ingredients so you can search any item and discover surprising yet scientifically grounded pairings—rooted in real food science, not guesswork.",
-      "Explore relationships in a beautiful 2D network graph or an immersive 3D force-directed visualization. Adjust umami, salty, sweet, sour, and bitter preferences, apply category and dietary filters, build an ingredient list, and generate custom AI-powered recipes tailored to your selections via OpenAI.",
-      "Designed for chefs, mixologists, and ambitious home cooks who want to break out of recipe ruts and create signature dishes backed by pure, delicious chemistry.",
+      "The Flavor Lab is an interactive application that unlocks the hidden chemistry behind taste. Built on the FlavorGraph network, it maps shared aromatic compounds between ingredients so you can search any item and discover surprising yet scientifically grounded pairings rooted in real food science, not guesswork.",
+      "Explore relationships in a beautiful 2D network graph or an immersive 3D force-directed visualization. Adjust umami, salty, sweet, sour and bitter preferences, apply category and dietary filters, build an ingredient list and generate custom AI-powered recipes tailored to your selections via OpenAI.",
+      "Designed for chefs, mixologists and ambitious home cooks who want to break out of recipe ruts and create signature dishes backed by pure, delicious chemistry.",
     ],
     highlights: [
       "Co-developed a full-stack web app for exploring ingredient relationships via interactive 2D/3D network graphs and generating personalized recipes from flavor preferences and dietary constraints",
       "Structured and optimized a 400+ ingredient pairing dataset into graph-based JSON schemas, powered by FlavorGraph data on shared aromatic compounds and co-occurrence",
-      "Built interactive 2D ingredient networks with vis-network and an immersive 3D flavor graph using Three.js, 3d-force-graph, and UnrealBloomPass post-processing",
+      "Built interactive 2D ingredient networks with vis-network and an immersive 3D flavor graph using Three.js, 3d-force-graph and UnrealBloomPass post-processing",
       "Integrated OpenAI GPT-4 through Netlify serverless functions to generate preference-aware recipes from user-selected ingredients and flavor sliders",
-      "Implemented category and dietary filters, ingredient tracking, and semantic similarity matching with Python (Pandas, NetworkX, scikit-learn, sentence-transformers)",
+      "Implemented category and dietary filters, ingredient tracking and semantic similarity matching with Python (Pandas, NetworkX, scikit-learn, sentence-transformers)",
       "Deployed the frontend on Netlify with a Python backend for data analysis and recipe pipeline orchestration",
     ],
     stack: [
@@ -183,7 +183,7 @@ window.PROJECTS = {
       "Round-up donation logic applied to linked transaction history",
       "Charity selection and donation tracking for users",
       "Capital One Nessie API integration for mock real-time banking data",
-      "Mobile-first flows for onboarding, giving, and impact summaries",
+      "Mobile-first flows for onboarding, giving and impact summaries",
     ],
     stack: ["JavaScript", "React Native", "Capital One Nessie API", "Git"],
     cardTags: ["React Native", "Nessie API", "FinTech"],
@@ -192,22 +192,77 @@ window.PROJECTS = {
     devpost: "https://devpost.com/software/sent-by-cent",
   },
 
+  blushedcv: {
+    title: "BlushedCV",
+    winner: false,
+    tagline:
+      "CUNY Tech Prep Top 5 Outstanding. Virtual makeup for early Zooms when you don’t feel like getting ready but still want to look your best.",
+    youtubeId: "urQ5d27yB1c",
+    overview: [
+      "BlushedCV is a browser-first AR makeup try-on for those “I woke up five minutes ago / my camera is about to go on” moments. Open the site, turn on the camera and soft makeup lands on your live face: lipstick, blush, eyeshadow, liner, brows, a little nose contour and under-eye concealer, like a filter you can actually control with sliders. Stay in your hoodie, skip the real makeup bag and still show up looking polished.",
+      "Dial everything down for “I barely have anything on,” or push it up if you want more presence on camera. Concealer quietly tracks your skin tone so under-eyes look a bit more awake without looking painted on. The browser finds points on your face and paints soft shapes for lips, lids and cheeks so the makeup follows you when you talk and move, which matters on Zoom because you’re not a still selfie.",
+      "Beyond the live Zoom mirror, you can customize colors, save a full look under a name (“Monday standup”) and load it later. Upload a makeup photo to steal colors from a look you love or run an AI color read from one webcam snapshot (Natural / Glam / Fun) for a friendly stylist-style suggestion and five hex colors to apply or scrapbook. Most of it stays on your device; Gemini only sees a photo when you ask. Deployed as a Hugging Face Space so you can open a link and go.",
+    ],
+    highlights: [
+      "Built a real-time virtual makeup try-on for low-effort video presence: live webcam makeup with per-product sliders for lipstick, blush, eyeshadow, liner, brows, nose contour and under-eye concealer",
+      "Engineered a client-side AR pipeline: mirrored WebGL video → MediaPipe Face Landmarker (~25 Hz) → region geometry with mouth/eye cutouts → mask → blur → tint → blend, so makeup tracks motion during calls",
+      "Added skin-tone-aware concealer sampling plus blend modes and intensity controls so looks stay soft and camera-ready instead of over-painted",
+      "Implemented saved looks in localStorage for one-tap reuse before recurring calls, plus upload-photo color sampling to try someone else’s makeup palette on your face",
+      "Shipped an AI color analysis path: webcam snapshot + Natural/Glam/Fun → FastAPI/Gemini returns stylist copy and five hex colors that apply to the same live makeup controls",
+      "Architected a TypeScript/Vite/WebGL frontend with a thin Python FastAPI backend for Gemini, Dockerized and hosted on a Hugging Face Space",
+    ],
+    stack: [
+      "TypeScript",
+      "Vite",
+      "WebGL",
+      "MediaPipe",
+      "Python",
+      "FastAPI",
+      "Google Gemini",
+      "Hugging Face",
+      "Pillow",
+      "Uvicorn",
+    ],
+    cardTags: ["MediaPipe", "WebGL", "Gemini"],
+    github: "https://github.com/subxxh/Doremi-Virtual-Makeup",
+    demo: "https://huggingface.co/spaces/subxxh/Blushed.CV",
+    devpost: "",
+    mediaGallery: [
+      { type: "youtube" },
+      {
+        type: "gif",
+        src: "assets/blushedcv-gif2.gif",
+        alt: "BlushedCV live makeup try-on on webcam",
+      },
+      {
+        type: "gif",
+        src: "assets/blushedcv-gif3.gif",
+        alt: "BlushedCV color controls and saved looks",
+      },
+      {
+        type: "image",
+        src: "assets/blushedCVPic2.png",
+        alt: "BlushedCV interface preview",
+      },
+    ],
+  },
+
   narratoons: {
     title: "NarraToons",
     winner: false,
     tagline: "Speak a story aloud and bring it to life with AI-generated illustrations.",
     youtubeId: "zZgteQ70tJA",
     overview: [
-      "Storytelling is a powerful tradition for developing minds—we've all wished classic tales like The Very Hungry Caterpillar had more to them. The hard part is turning those ideas into illustrations when you can't draw. NarraToons makes that possible for educators, families, and dreamers who want to speak their story and see it illustrated.",
-      "Users record their narrative through the browser microphone. Whisper converts speech to text, OpenAI enhances the story and generates page-by-page illustration prompts, and the app returns a slideshow of personalized artwork paired with the story text—in minutes, not hours.",
+      "Storytelling is a powerful tradition for developing minds. We've all wished classic tales like The Very Hungry Caterpillar had more to them. The hard part is turning those ideas into illustrations when you can't draw. NarraToons makes that possible for educators, families and dreamers who want to speak their story and see it illustrated.",
+      "Users record their narrative through the browser microphone. Whisper converts speech to text, OpenAI enhances the story and generates page-by-page illustration prompts, and the app returns a slideshow of personalized artwork paired with the story text in minutes, not hours.",
       "Built with a Python Flask backend and HTML frontend connected through a custom API. Note: the live demo currently requires the backend to be run locally; public hosting was limited during the hackathon due to tunneling constraints.",
     ],
     highlights: [
       "Built a voice-first storybook creator where users speak aloud and receive AI-enhanced narrative text plus matching illustrations for each page",
       "Integrated Whisper speech-to-text to capture user stories, then piped transcripts through OpenAI to refine the narrative and generate structured page prompts for image generation",
-      "Designed an HTML frontend with microphone capture, loading and connection status indicators, and a slideshow viewer for generated story pages",
+      "Designed an HTML frontend with microphone capture, loading and connection status indicators and a slideshow viewer for generated story pages",
       "Orchestrated backend-to-frontend communication through a Flask API, keeping Python for AI processing and HTML for a lightweight, accessible UI",
-      "Parsed free-form user input into discrete page prompts—working around OpenAI's limitation of not accepting images as inputs for image generation",
+      "Parsed free-form user input into discrete page prompts, working around OpenAI's limitation of not accepting images as inputs for image generation",
       "Deployed the frontend on Vercel with seamless API integration between Python backend services and the client interface",
     ],
     stack: [
@@ -228,10 +283,10 @@ window.PROJECTS = {
   "slime-battle": {
     title: "Slime Battle",
     winner: false,
-    tagline: "Catch, train, and battle in a 3D multiplayer world.",
+    tagline: "Catch, train and battle in a 3D multiplayer world.",
     youtubeId: "",
     overview:
-      "In Slime Battle, players catch, train, and battle with virtual monsters in a 3D world. The game features real-time multiplayer so players can interact with each other or compete against computer AI opponents.",
+      "In Slime Battle, players catch, train and battle with virtual monsters in a 3D world. The game features real-time multiplayer so players can interact with each other or compete against computer AI opponents.",
     highlights: [
       "3D world exploration with catch-and-battle mechanics",
       "Real-time multiplayer sessions and AI opponent modes",
@@ -293,7 +348,7 @@ window.PROJECTS = {
     overview:
       "A cute, pocket-sized to-do list application with task data stored and retrieved so your list persists between sessions.",
     highlights: [
-      "Add, complete, and remove tasks with a minimal UI",
+      "Add, complete and remove tasks with a minimal UI",
       "Persistent task storage across browser sessions",
       "Lightweight component structure for fast interactions",
       "Clean visual design focused on clarity over clutter",
